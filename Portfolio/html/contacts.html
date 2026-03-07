@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Shovon's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="../css/contacts.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <ul>
+                <li><a class="link" href="../index.html">Homepage</a></li>
+                <li><a class="link" href="education.html">Education</a></li>
+                <li><a class="link" href="projects.html">Projects</a></li>
+                <li><a class="link" href="experience.html">Experience</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <form method="post">
+
+            <fieldset>
+                <legend>Registration Form</legend>
+
+                <table>
+
+                    <tr>
+                        <td><label for="fname">First Name:</label></td>
+                        <td><input type="text" id="fname" placeholder="Enter Your First Name" fname="fname" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="lname">Last Name:</label></td>
+                        <td><input type="text" id="lname" placeholder="Enter Your Last Name" lname="lname" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Gender:</label></td>
+                        <td><input type="radio" name="gender" value="male" required>Male
+                            <input type="radio" name="gender" value="female">Female
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" placeholder="Enter Your Email" name="email" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="company">Company:</label></td>
+                        <td><input type="text" id="company" placeholder="Enter Your Company Name" name="company"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Reason of Contact:</label></td>
+                        <td>
+                            <input type="radio" name="reason" value="projects" required>Projects
+                            <input type="radio" name="reason" value="thesis">Thesis
+                            <input type="radio" name="reason" value="job">Job
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Skills:</label></td>
+                        <td>
+                            <input type="checkbox" value="web development" required> Web Development
+                            <input type="checkbox" value="mobile development"> Mobile Development
+                            <input type="checkbox" value="ai development"> AI/ML Development
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Consultation Date:</label></td>
+                        <td><input type="date" name="date" value="date" name="date" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="submit" vlaue="Register"></td>
+                        <td><input type="reset"></td>
+                    </tr>
+
+                </table>
+
+            </fieldset>
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="foot">
+            <a href="https://github.com/SHADAT-AHMED-SHOVON" target="_blank"><img src="../data/github.png"
+                    alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/shadat-ahmed-shovon-501486217/" target="_blank"><img
+                    src="../data/linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

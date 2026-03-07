@@ -1,0 +1,48 @@
+Selector {
+    Property: value;
+}
+
+fieldset {
+    border: none;
+}
+
+h3 {
+    color: red;
+}
+
+label {
+    font-weight: bold;
+    font-family: Arial;
+}
+
+table {
+    position: center;
+}
+
+.align {
+    text-align: right;
+}
+
+.month {
+    font-weight: lighter;
+}
+
+span {
+    color: red;
+}
+
+radio {
+    color: blue;
+}
+
+.invalid {
+    color: grey;
+}
+
+option {
+    color: #000;
+}
+
+.alien {
+    text-align: center;
+}

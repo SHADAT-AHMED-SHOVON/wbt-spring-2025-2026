@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+
+<body>
+    <form method="post">
+
+        <fieldset>
+            <legend>
+                <h3>Donor Information</h3>
+            </legend>
+
+            <table>
+
+                <tr>
+                    <td class="align"><label for="fname">First Name<span>*</span></label></td>
+                    <td><input type="text" id="fname" name="fname" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="align"><label for="lname">Last Name<span>*</span></label></td>
+                    <td><input type="text" id="lname" name="lname" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="align"><label for="company">Comapany</label></td>
+                    <td><input type="text" id="company" name="company"></td>
+                </tr>
+
+                <tr>
+                    <td class="align"><label for="address">Address1<span>*</span></label></td>
+                    <td><input type="text" id="a1name" name="a1name" required></td>
+                </tr>
+
+                <tr>
+                    <td class="align"><label for="address">Address2</label></td>
+                    <td><input type="text" id="a2name" name="a2name"></td>
+                </tr>
+
+                <tr>
+                    <td class="align"><label for="City">City<span>*</span></label></td>
+                    <td><input type="text" id="city" name="city" required></td>
+                </tr>
+
+                <tr>
+                    <td class="align"><label for="state">State<span>*</span></label></td>
+                    <td>
+                        <select id="state" name="state" required>
+                            <option value="" disabled selected hidden class="invalid">Select a State</option>
+                            <option>East</option>
+                            <option>West</option>
+                            <option>North</option>
+                            <option>South</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="align"><label for="zip">Zip Code<span>*</span></label></td>
+                    <td><input type="text" id="zip" name="zip" required></td>
+                </tr>
+
+                <tr>
+                    <td class="align"><label for="country">Country:</label></td>
+                    <td>
+                        <select id="country" name="country" required>
+                            <option value="" disabled selected hidden class="invalid">Select a Country</option>
+                            <option>Bangladesh</option>
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>UK</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="align"><label for="phone">Phone</label></td>
+                    <td><input type="tel" id="phone" name="phone"></td>
+                </tr>
+
+                <tr>
+                    <td class="align"><label for="fax">Fax</label></td>
+                    <td><input type="tel" id="fax" name="fax"></td>
+                </tr>
+
+                <tr>
+                    <td class="align"><label for="email">Email<span>*</span></label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+
+                <tr>
+                    <td class="align"><label>Donation Amount<span>*</span></label></td>
+                    <td>
+                        <input type="radio" name="donation" value="None"> None
+                        <input type="radio" name="donation" value="75"> 75
+                        <input type="radio" name="donation" value="100"> 100
+                        <input type="radio" name="donation" value="250"> 250
+                        <input type="radio" name="donation" value="other"> other
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align">
+                        <p>(Check a button or type In your amount)</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="align"><label>Other Amount $</label></td>
+                    <td><input type="number" id="donation" name="donation"></td>
+                </tr>
+
+                <tr>
+                    <td class="align"><label>Recurring Donation</label></td>
+                    <td>
+                        <input type="checkbox" value="regular"> I am interested in giving on a regular basis.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>(Check if yes)</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="align"></td>
+                    <td>
+                        <label class="month">Monthly Credit Card $</label>
+                        <input type="number" id="donation" name="donation">
+                    </td>
+                    <td><label class="month">For</label></td>
+                    <td><input type="number" id="months" name="months"></td>
+                    <td><label class="month">Months</label></td>
+                </tr>
+
+                <tr>
+                    <td class="align">
+                        <input type="reset">
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+
+            </table>
+
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
