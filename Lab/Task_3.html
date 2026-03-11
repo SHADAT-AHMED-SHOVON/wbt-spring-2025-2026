@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Check</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        .field {
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 8px;
+            width: 150px;
+        }
+
+        #displayMessage {
+            margin-top: 10px;
+            font-weight: bold;
+            min-height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="membershipForm">
+        <div class="field">
+            <label>Enter Your Age:</label>
+            <input type="number" id="userAge" placeholder="Enter age">
+        </div>
+    </form>
+    <div id="displayMessage"></div>
+
+    <script>
+        const ageInput = document.getElementById('userAge');
+        const displayMessage = document.getElementById('displayMessage');
+
+        ageInput.addEventListener('input', function () {
+            const age = parseInt(this.value);
+
+            displayMessage.style.color = "black";
+
+            if (isNaN(age) || this.value === "") {
+                displayMessage.textContent = "";
+            } else if (age < 40) {
+                displayMessage.textContent = "To be a part of the community, you need to at least 40";
+            } else if (age >= 40 && age <= 50) {
+                displayMessage.textContent = "You are the youngsters of this community";
+            } else {
+                displayMessage.textContent = "Top level members of the group";
+                displayMessage.style.color = "red";
+            }
+        });
+    </script>
+
+</body>
+
+</html>
